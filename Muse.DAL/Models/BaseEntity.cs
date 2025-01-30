@@ -14,5 +14,5 @@ public class BaseEntity
 [NotMapped]
 public class BaseTranslationEntity : BaseEntity
 {
-    public int LanguageId { get; set; }
+    public long LanguageId { get; set; }
 }

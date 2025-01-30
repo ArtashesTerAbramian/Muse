@@ -2,7 +2,7 @@
 
 namespace Muse.DTO;
 
-public class ErrorModelDto
+public record ErrorModelDto
 {
     public long Code { get; set; }
     public string Description { get; set; }

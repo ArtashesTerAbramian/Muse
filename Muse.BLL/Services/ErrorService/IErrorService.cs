@@ -1,7 +1,9 @@
-﻿using Muse.DTO;
+﻿using Ardalis.Result;
+using Muse.DTO;
 
 namespace Muse.BLL.Services.ErrorService;
 public interface IErrorService
 {
-    Task<ErrorModelDto> GetById(long id);
+    Task<Result<ErrorModelDto>> GetById(long id);
+    Task<string> GetErrorName(long id);
 }

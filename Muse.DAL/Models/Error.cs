@@ -2,5 +2,10 @@
 
 public class Error : BaseEntity
 {
-    public string Name { get; set; } = default!;
+    public Error()
+    {
+        Translations = new HashSet<ErrorTranslation>();
+    }
+
+    public ICollection<ErrorTranslation> Translations { get; set; }
 }
